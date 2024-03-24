@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Age Calculator</title>
+		<link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon" />
+		<link rel="stylesheet" href="style.css" />
+		<script src="index.js" defer></script>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,400;1,800&display=swap"
+			rel="stylesheet"
+		/>
+	</head>
+	<body>
+		<main class="main-container">
+			<section class="main-container__top-section">
+				<fieldset class="main-container__input-container">
+					<label for="day-input">Day</label>
+					<input
+						placeholder="DD"
+						type="number"
+						id="day-input"
+						min="1"
+						max="31"
+					/>
+				</fieldset>
+
+				<fieldset class="main-container__input-container">
+					<label for="month-input">Month</label>
+					<input
+						placeholder="MM"
+						type="number"
+						id="month-input"
+						min="1"
+						max="12"
+					/>
+				</fieldset>
+
+				<fieldset class="main-container__input-container">
+					<label for="year-input">Year</label>
+					<input
+						placeholder="YYYY"
+						type="number"
+						id="year-input"
+						min="1900"
+						max="2024"
+					/>
+				</fieldset>
+			</section>
+			<div class="divider">
+				<div class="divider__line"></div>
+				<button class="button">
+					<img
+						src="./assets/icon-arrow.svg"
+						alt="arrow icon"
+						class="divider__img"
+					/>
+				</button>
+			</div>
+			<section class="main-container__age-section">
+				<h2 class="main-container__age-section__age-text">
+					<span class="years">--</span> years
+				</h2>
+				<h2 class="main-container__age-section__age-text">
+					<span class="months">--</span> months
+				</h2>
+				<h2 class="main-container__age-section__age-text">
+					<span class="days">--</span> days
+				</h2>
+			</section>
+		</main>
+	</body>
+</html>
